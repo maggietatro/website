@@ -26,6 +26,7 @@
       margin-left: 50px;
       margin-top: 20px;
       margin-bottom: 20px;
+      filter: opacity(50%);
 
     }
 
@@ -39,6 +40,8 @@
       margin-left: 50px;
       margin-top: 20px;
       margin-bottom: 20px;
+      filter: saturate(30%);
+
     }
 
     #donut3 {
@@ -86,10 +89,32 @@
       font-weight: 600;
       font-size: 32px;
       margin-top: 50px;
+
     }
 
     h1 strong {
+      font-size: 75px;
       color: black;
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRTYwNUMxOyIgLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMzQjExM0I7IiAvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IGZpbGw9InVybCgjZ3JhZGllbnQpIiBoZWlnaHQ9IjEwMCUiIHdpZHRoPSIxMDAlIiAvPjwvc3ZnPg==);
+      background-image: -webkit-gradient(linear, left top, 0deg, color-stop(0%, #E605C1), color-stop(100%, #3B113B));
+      background-image: -moz-linear-gradient(0deg, #E605C1 0%, #3B113B 100%);
+      background-image: -webkit-linear-gradient(0deg, #E605C1 0%, #3B113B 100%);
+      background-image: -o-linear-gradient(0deg, #E605C1 0%, #3B113B 100%);
+      background-image: -ms-linear-gradient(0deg, #E605C1 0%, #3B113B 100%);
+      background-image: linear-gradient(0deg, #E605C1 0%, #3B113B 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+      display: inline-block;
+    }
+
+    .donuts {
+      font-family: 'Montserrat', sans-serif;
+      background-image: url(donut0.jpg);
+      background-position: left;
+      background-repeat: no-repeat;
+      background-clip: text;
+      color: transparent;
     }
 
     .disclaimer {
@@ -108,8 +133,12 @@
   <h1 class="disclaimer">
       This page is intentionally obnoxious because I'm practicing my HTML and CSS formatting and styling skills. This assignment required me to experiment with images. Give yourself a high-five if you reach the end! :)
     </h1>
+
   <hr />
-  <h1> <strong>Experiment 2 - Images</strong></h1>
+
+  <h1> <strong>DONUTS!</strong></h1>
+
+  <h1 class="donuts"> <strong>DONUTS!</strong></h1>
 
   <div id="donut1">
   </div>
