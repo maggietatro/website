@@ -3,60 +3,170 @@
 
 <head>
   <meta charset="utf-8">
-  <title>flexbox demo</title>
+  <title>Experiment 4</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
+    section {
+      background: pink;
+      display: flex;
+      margin-top: 50px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    div {
+      background: black;
+      width: 100px;
+      height: 100px;
+    }
+
+    .flex-container1 {
+      padding: 50px;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: center;
+      text-align: center;
+    }
+
+    .flex-container1 div {
+      padding: 15px;
+      border-radius: 4rem;
+      width: 75px;
+      height: 75px;
+      color: #F5FDB6;
+    }
+
+    .order1 {
+      order: -1;
+      flex: 3;
+    }
+
+    .flex-container2 {
+      flex-direction: row-reverse;
+      padding: 50px;
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+      align-content: space-between;
+      text-align: center;
+    }
+
+    .flex-container2 div {
+      padding: 15px;
+      border-radius: 4rem;
+      width: 75px;
+      height: 75px;
+      color: #ACDDA8;
+    }
+
+    .flex-container3 {
+      padding: 50px;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: flex-end;
+      text-align: center;
+    }
+
+    .flex-container3 div {
+      padding: 15px;
+      border-radius: 4rem;
+      width: 75px;
+      height: 75px;
+      color: #F9D35C;
+    }
+
+    .flex-container4 {
+      flex-direction: row-reverse;
+      padding: 50px;
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+      align-content: space-between;
+      text-align: center;
+    }
+
+    .flex-container4 div {
+      padding: 15px;
+      border-radius: 4rem;
+      width: 75px;
+      height: 75px;
+      color: #99FFFF;
+    }
+
+    .flex-container5 {
+      display: flex;
+      padding: 50px;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: flex-end;
+      text-align: center;
+    }
+
+    .flex-container5 div {
+      padding: 15px;
+      width: 75px;
+      height: 75px;
+      color: #FFF;
+    }
   </style>
 </head>
 
 <body>
   <header>
-    <h1>flexbox experiments</h1>
+    <h1>Flexbox</h1>
   </header>
 
   <section class="flex-container1">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>7</div>
-    <div>8</div>
+    <div>
+      <h2>baby</h2>
+    </div>
+    <div>
+      <h2>you</h2>
+    </div>
+    <div>
+      <h2>can</h2>
+    </div>
   </section>
 
   <section class="flex-container2">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>7</div>
-    <div>8</div>
+    <div>
+      <h2>car</h2>
+    </div>
+    <div>
+      <h2>my</h2>
+
+    </div>
+    <div>
+      <h2>drive</h2>
+    </div>
+  </section>
+
+  <section class="flex-container3">
+    <div>
+      <h2>yes</h2>
+    </div>
+    <div>
+      <h2>i'm</h2>
+
+    </div>
+    <div>
+      <h2>gonna</h2>
+    </div>
   </section>
 
   <section class="flex-container4">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>7</div>
-    <div>8</div>
-  </section>
+    <div>
+      <h2>star</h2>
+    </div>
+    <div>
+      <h2>a</h2>
 
-  <section class="flex-container4">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>7</div>
-    <div>8</div>
+    </div>
+    <div>
+      <h2>be</h2>
+    </div>
   </section>
 
   <section class="flex-container5">
