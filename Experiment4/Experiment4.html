@@ -17,17 +17,19 @@
 
     div {
       background: black;
-      width: 100px;
-      height: 100px;
+
     }
 
     .flex-container1 {
-      padding: 50px;
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: space-around;
       align-content: center;
       text-align: center;
+      background-image: url("john.jpg");
+      background-position: right;
+      background-repeat: no-repeat;
+      background-blend-mode: screen;
     }
 
     .flex-container1 div {
@@ -50,6 +52,11 @@
       justify-content: center;
       align-content: space-between;
       text-align: center;
+      background-image: url("paul.jpg");
+      background-position: left;
+      background-repeat: no-repeat;
+      background-blend-mode: screen;
+      height: auto;
     }
 
     .flex-container2 div {
@@ -61,12 +68,15 @@
     }
 
     .flex-container3 {
-      padding: 50px;
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: space-around;
-      align-content: flex-end;
+      align-content: center;
       text-align: center;
+      background-image: url("george.jpg");
+      background-position: right;
+      background-repeat: no-repeat;
+      background-blend-mode: screen;
     }
 
     .flex-container3 div {
@@ -84,6 +94,10 @@
       justify-content: center;
       align-content: space-between;
       text-align: center;
+      background-image: url("ringo.jpg");
+      background-position: left;
+      background-repeat: no-repeat;
+      background-blend-mode: screen;
     }
 
     .flex-container4 div {
@@ -97,26 +111,76 @@
     .flex-container5 {
       display: flex;
       padding: 50px;
-      flex-direction: column;
+      flex-direction: row-reverse;
       flex-wrap: wrap;
-      justify-content: space-around;
-      align-content: flex-end;
-      text-align: center;
+      justify-content: space-between;
+      align-items: stretch;
     }
 
     .flex-container5 div {
       padding: 15px;
-      width: 75px;
-      height: 75px;
       color: #FFF;
+      flex-shrink: 1;
+    }
+
+    .article {
+      flex: 4;
+    }
+
+    .p {
+      word-break: break-word;
+    }
+
+    .article h2 {
+      color: pink;
+      font-style: normal;
+      font-weight: bolder;
+    }
+
+    .sidebar {
+      flex: 1 4;
+      background-color: lightgray;
+
+    }
+
+    .sidebar h2 {
+      color: #FFF;
+      font-size: 16px;
+      font-weight: bold;
+      color: black;
+    }
+
+    .sidebar a {
+      color: blue;
+      font-size: 13px;
+    }
+
+    .sidebar a :visited {
+      color: #FFF;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .footer {
+      flex: 1 100%;
+      text-align: center;
+      background-color: white;
+
+    }
+
+    .footer h2 {
+      font-weight: lighter;
+      font-size: 14px;
+      color: black;
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <h1>Flexbox</h1>
-  </header>
 
   <section class="flex-container1">
     <div>
@@ -136,7 +200,6 @@
     </div>
     <div>
       <h2>my</h2>
-
     </div>
     <div>
       <h2>drive</h2>
@@ -170,19 +233,27 @@
   </section>
 
   <section class="flex-container5">
-    <div>
-      <h2>title of main article</h2>
-      <p>paragraph text. put some filler content here. make this an article or something.</p>
-      <p>paragraph text. put some filler content here. make this an article or something.</p>
+    <div class="article">
+      <h2>Beatlemania</h2>
+      <p>"Journalists compared the sounds made at Beatles concerts to the nerve-shredding cries of pigs being brought to slaughter or the screech that New York City’s subway trains make as they grind along the rails."
+      </p>
+      <p>"When the Beatles played Shea Stadium in 1965, The New York Times reported that the crowd’s immature lungs produced a sound so staggering, so massive, so shrill and sustained that it crossed the lines from enthusiasm into hysteria and soon
+        it was in the classic Greek meaning of the word ‘pandemonium’ — the region of the demons.”
+      </p>
+      <p>"Small riots broke out at many Beatles concerts, and some people feared a major riot. The Beatles worried about being torn to bits or causing a potentially fatal stampede."
+      </p>
     </div>
-    <div>
-      <h2>sidebar here</h2>
-      <p>paragraph text. put some filler content here. make this an article or something.</p>
+    <div class="sidebar">
+      <h2>Learn More</h2>
+      <ul>
+        <li> <a href ="https://en.wikipedia.org/wiki/The_Beatles">About the Beatles </a></li>
+        <li> <a href ="https://www.bostonglobe.com/ideas/2016/08/04/beatle/sPJmHY11P5zDTZnc26SupJ/story.html">Beatlemania </a></li>
+        <li> <a href ="https://en.wikipedia.org/wiki/The_Beatles_discography">Discography</a></li>
+      </ul>
     </div>
-    <div>
-      <h2>footer stuff here</h2>
-      <p>paragraph text. put some filler content here. make this an article or something.</p>
-    </div>
+      <div class="footer">
+        <h2>Copyright 2018</h2>
+      </div>
   </section>
 
 </body>
