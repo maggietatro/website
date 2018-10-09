@@ -110,6 +110,10 @@
       float: right;
     }
 
+    button {
+      border: none;
+    }
+
     /* The Modal (background) */
     .modal {
       display: none;
@@ -144,17 +148,33 @@
       text-decoration: none;
     }
 
+    .modal-content h3 {
+      color: #3c7dc0;
+      font-weight: bolder;
+    }
+
+    .modal-content h2 {
+      color: #aaaaaa;
+      font-weight: normal;
+      font-size: 20px;
+    }
+
+    .modal-content p {
+      color: #ooo;
+      font-weight: normal;
+    }
+
     /* The Close Button */
     .close {
       color: #aaaaaa;
       float: right;
       font-size: 28px;
-      font-weight: bold;
+      font-weight: normal;
     }
 
     .close:hover,
     .close:focus {
-      color: #000;
+      color: #3c7dc0;
       text-decoration: none;
       cursor: pointer;
     }
@@ -211,8 +231,7 @@
 
   <div class="grid-container">
     <!-- Trigger/Open The Modal -->
-    <div class="grid-item"><img src="education.png" alt="graduation cap"><span><button id="myBtn">Education</button></span></div>
-
+    <button id="myBtn" class="grid-item"><img src="education.png" alt="graduation cap">Education</button>
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
@@ -220,7 +239,7 @@
       <!-- Modal content -->
       <div class="modal-content">
         <span class="close">&times;</span>
-        <h3>Education</h3>
+        <h2>Education</h2>
         <br />
         <h3>
           University of California, Berkeley
@@ -282,7 +301,9 @@
         }
       }
     </script>
-    <div class="grid-item"><img src="skills.png" alt="iMac computer"><span>Skills</span></div>
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn2" class="grid-item"><img src="skills.png" alt="iMac computer">Skills</button>
+
     <div class="grid-item"><img src="random.png" alt="thought bubble"><span>Endorsements</span></div>
   </div>
 
