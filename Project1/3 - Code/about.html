@@ -1,0 +1,688 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fafafa;
+      text-decoration-color: #585858;
+      font-size: 14px;
+      font-style: extra-bold;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
+      margin: 0px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 35px;
+      grid-row-gap: 25px;
+      background-color: #fafafa;
+      padding: 20px;
+      padding-left: 15%;
+      padding-right: 15%;
+      padding-top: 75px;
+    }
+
+    .grid-item {
+      background-color: #ffffff;
+      padding: 20px;
+      font-size: 1rem;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+      border-radius: 6px;
+    }
+
+    .grid-item:hover {
+      background-color: #fff;
+      color: #2b2b2b;
+      border: none;
+      box-shadow: 0 3px 4px rgba(0, 0, 0, .1);
+      transition: all .1s linear;
+      transform: translateY(-2px);
+      border-radius: 6px;
+    }
+
+    .grid-item img {
+      width: 30px;
+      height: 30px;
+      margin-right: 15px;
+      vertical-align: middle;
+    }
+
+    #header {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: #FFFFFF;
+      border-bottom: 1px solid #eee;
+    }
+
+    header {
+      width: 100%;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      top: 0;
+      display: block;
+      font-size: 1rem;
+      font-weight: 800;
+      line-height: 1.6;
+      padding-right: 445px;
+      overflow: hidden;
+      background-color: #ffffff;
+      padding: 15px 10px;
+    }
+
+    header a.logo {
+      font-size: 1rem;
+      font-weight: normal;
+      color: #585858;
+    }
+
+    header a {
+      float: left;
+      color: #585858;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1rem;
+      line-height: 25px;
+      border-radius: 4px;
+      font-weight: 300;
+      padding: 3px 13px;
+    }
+
+    header a.active {
+      background-color: #000;
+      color: #FFFFFF;
+    }
+
+    .header-right a:hover {
+      background-color: #3c7dc0;
+      color: #FFFFFF;
+    }
+
+    .header-right {
+      float: right;
+    }
+
+    button {
+      border: none;
+      text-align: left;
+    }
+
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      padding-top: 100px;
+      /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+      background-color: #fff;
+      margin: auto;
+      padding: 20px;
+      border: 3px solid #585858;
+      width: 60%;
+      text-decoration: none;
+      border-radius: 20px;
+
+    }
+
+    .modal-content h3 {
+      color: #585858;
+      font-weight: bolder;
+    }
+
+    .modal-content h2 {
+      color: #585858;
+      font-weight: normal;
+      font-size: 16px;
+    }
+
+    .modal-content p {
+      color: #ooo;
+      font-weight: normal;
+    }
+
+    /* The Close Button */
+    .close {
+      color: #585858;
+      float: right;
+      font-size: 22px;
+      font-weight: normal;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #3c7dc0;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+hr {
+  color:#585858;
+  background-color: #585858;
+  height: 3px;
+}
+
+.about-top h2 {
+  text-align: center;
+  padding-top: 50px;
+  color: #585858;
+  font-size: 20px;
+}
+
+.about-bottom i {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 20px;
+}
+    /*tablet*/
+    @media screen and (max-width: 1200px) {
+
+      .grid-container {
+        grid-template-columns: 1fr 1fr;
+        padding-top: 75px;
+      }
+    }
+
+    /*mobile phone*/
+    @media screen and (max-width: 600px) {
+      header a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      .header-right a:hover {
+        background-color: #3c7dc0;
+        color: #FFFFFF;
+      }
+
+      .header-right {
+        float: none;
+      }
+
+      .grid-container {
+        grid-template-columns: 1fr;
+        padding-top: 50px;
+      }
+
+      .logo {
+        text-align: center;
+      }
+
+      .modal-content {
+        width: 80%;
+      }
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html" class="logo">Maggie Tatro</a>
+    <div class="header-right">
+      <a href="index.html">Portfolio</a>
+      <a href="endorsements.html">Endorsements</a>
+      <a href="about.html">About</a>
+    </div>
+  </header>
+
+<div class="about-top">
+  <h2>Hi! I'm Maggie. Born and raised in California. Based in Mid-Michigan.</h2>
+</div>
+
+  <div class="grid-container">
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn1" class="grid-item"><img src="bio.png" alt="user">Bio</button>
+
+    <!-- The Modal -->
+    <div id="myModal1" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+<h2>Bio</h2>
+<hr/>
+        <h3>I'm methodical.</h3>
+        <p>
+          I like to be prepared. I make lists, I schedule things, I meet deadlines.
+          I have a process-driven and solution-oriented approach to project
+          management. I do my research and, as much as possible, I try to anticipate
+          potential setbacks before collaborating with and presenting to developers,
+          stakeholders, and other design professionals.
+        </p>
+
+        <h3>I like to be challenged.</h3>
+
+        <p>
+          It's important to hear positive feedback, but it's equally important to
+          hear when something isn't working. If a user struggles to interact with or
+          understand a design, I work hard to make improvements to the usability,
+          functionality, and presentation of the design. When I get stuck, I
+          brainstorm with my co-workers, re-read passages of design books, or look
+          for inspiration on the internet.
+        </p>
+
+        <h3>I value work-life balance.</h3>
+
+        <p>
+          I love what I do professionally, but I also make time for non-professional
+          interests. I enjoy reading, traveling, music, comedy, hanging out with my
+          husband, staying in touch with family, trying new restaurants, and playing
+          board games with friends.
+        </p>
+      </div>
+
+    </div>
+
+    <script>
+      // Get the modal
+      var modal1 = document.getElementById('myModal1');
+
+      // Get the button that opens the modal
+      var btn1 = document.getElementById("myBtn1");
+
+      // Get the <span> element that closes the modal
+      var span1 = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn1.onclick = function() {
+        modal1.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span1.onclick = function() {
+        modal1.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal1.style.display = "none";
+        }
+      }
+    </script>
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn" class="grid-item"><img src="education.png" alt="graduation cap">Education</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Education</h2>
+          <hr/>
+        <h3>
+          Lansing Community College
+        </h3>
+        <ul>
+          <li>
+            AA, Graphic Communication
+          </li>
+          <li>
+            Specialization in User Interface Design + User Experience Design</li>
+          <li>
+            Spring 2018 - Spring 2019 </li>
+        </ul>
+
+        <h3>
+          University of the West Indies, Cave Hill
+        </h3>
+        <ul>
+          <li>
+            Study Abroad, Barbados
+          </li>
+          <li>
+            Coursework in Linguistics + Special Education </li>
+          <li>
+            Fall 2011 </li>
+        </ul>
+        <h3>
+          University of California, Berkeley
+        </h3>
+        <ul>
+          <li>
+            BA, Studio Art
+          </li>
+          <li>
+            Specialization in Photography</li>
+          <li>
+            Minor in Education
+          </li>
+          <li>
+            Spring 2008 - Fall 2011
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById('myModal');
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[1];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn2" class="grid-item"><img src="skills.png" alt="iMac computer">Skills</button>
+
+    <!-- The Modal -->
+    <div id="myModal2" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Skills</h2>
+          <hr/>
+        <h3>
+          UX + UI
+         </h3>
+        <ul>
+          <li>
+            Lo-Fi Prototyping
+          </li>
+          <li>
+            Hi-Fi Prototyping
+          </li>
+          <li>
+            Rapid Prototyping
+          </li>
+          <li>
+            Wireframing
+          </li>
+          <li>
+            Information Architecture
+          </li>
+          <li>
+            Sitemaps
+          </li>
+          <li>
+            Usability Testing + Moderating
+          </li>
+          <li>
+            Mobile + Web Design
+          </li>
+        </ul>
+        <h3>
+          Software
+        </h3>
+        <ul>
+          <li>
+            Adobe Creative Suite - InDesign, Illustrator, Photoshop, Lightroom, Dreamweaver
+          </li>
+          <li>
+            Microsoft Office Suite - Outlook, Excel, Word, PowerPoint
+          </li>
+          <li>
+            UXPin
+          </li>
+          <li>
+            Sketch
+          </li>
+          <li>
+            JIRA
+          </li>
+          <li>
+            Confluence
+          </li>
+          <li>
+            HTML + CSS
+          </li>
+          <li>
+            Atom
+          </li>
+          <li>
+            Github
+          </li>
+          <li>
+            Slack
+          </li>
+          <li>
+            Invision
+          </li>
+          <li>
+            Wireframe.cc
+          </li>
+        </ul>
+        <h3>
+Misc.       </h3>
+        <ul>
+          <li>
+            Research
+          </li>
+          <li>
+            Project Management
+          </li>
+          <li>
+            Agile Methodology
+          </li>
+          <li>
+            Collaboration
+          </li>
+          <li>
+            Social Media Integration
+          </li>
+          <li>
+            Team Building
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <script>
+      // Get the modal
+      var modal2 = document.getElementById('myModal2');
+
+      // Get the button that opens the modal
+      var btn2 = document.getElementById("myBtn2");
+
+      // Get the <span> element that closes the modal
+      var span2 = document.getElementsByClassName("close")[2];
+
+      // When the user clicks the button, open the modal
+      btn2.onclick = function() {
+        modal2.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span2.onclick = function() {
+        modal2.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal2) {
+          modal2.style.display = "none";
+        }
+      }
+    </script>
+
+
+
+    <script>
+      // Get the modal
+      var modal3 = document.getElementById('myModal3');
+
+      // Get the button that opens the modal
+      var btn3 = document.getElementById("myBtn3");
+
+      // Get the <span> element that closes the modal
+      var span3 = document.getElementsByClassName("close")[3];
+
+      // When the user clicks the button, open the modal
+      btn3.onclick = function() {
+        modal3.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span3.onclick = function() {
+        modal3.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal3) {
+          modal3.style.display = "none";
+        }
+      }
+    </script>
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn4" class="grid-item"><img src="employment.png" alt="resume">Employment</button>
+
+    <!-- The Modal -->
+    <div id="myModal4" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Employment</h2>
+          <hr/>
+        <p>
+          I'm a User Interface Design Intern on the Software Development team at
+          MSU Federal Credit Union. I work collaboratively with developers,
+          designers, managers, and stakeholders. Our websites
+          and mobile apps are managed by a team that is dedicated to
+          understanding business goals and translating business and user needs
+          into engaging digital experiences. My internship provides me with an
+          exciting opportunity to work on challenging projects that impact
+          employees and members.
+        </p>
+
+        <h3>
+          MSU Federal Credit Union
+        </h3>
+        <ul>
+          <li>
+            User Interface Design Intern
+          </li>
+          <li>
+            April 2018 - present
+          </li>
+        </ul>
+
+        <h3>
+          GreenStone Farm Credit Services
+        </h3>
+        <ul>
+          <li>
+            Human Resources Assistant
+          </li>
+          <li>
+            September 2017 - December 2017
+          </li>
+        </ul>
+
+        <h3>
+          Michigan State University
+        </h3>
+        <ul>
+          <li>
+            Clerkship Coordinator
+          </li>
+          <li>
+            January 2016 - September 2017
+          </li>
+          <br>
+          <li>
+            Graduate Program Coordinator
+          </li>
+          <li>
+            March 2015 - January 2016
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+    <script>
+      // Get the modal
+      var modal4 = document.getElementById('myModal4');
+
+      // Get the button that opens the modal
+      var btn4 = document.getElementById("myBtn4");
+
+      // Get the <span> element that closes the modal
+      var span4 = document.getElementsByClassName("close")[3];
+
+      // When the user clicks the button, open the modal
+      btn4.onclick = function() {
+        modal4.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span4.onclick = function() {
+        modal4.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal4) {
+          modal4.style.display = "none";
+        }
+      }
+    </script>
+  </div>
+
+  <div class="about-bottom">
+    <i class ="fa fa-linkedin"></i>
+
+  </div>
+
+</body>
+
+</html>
