@@ -7,27 +7,28 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="main.css">
   <link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
 </head>
 
 <body>
 
+
   <header>
     <a href="portfolio.html" class="logo">Maggie Tatro</a>
-    <div class="header-right">
+    <nav class="header-right">
       <a href="about.html">About</a>
       <a href="portfolio.html">Portfolio</a>
       <a href="endorsements.html">Endorsements</a>
-    </div>
+    </nav>
   </header>
 
-<div class="top">
-  <h2>Portfolio</h2>
-</div>
+  <div class="top">
+    <h2>Portfolio</h2>
+  </div>
 
   <div class="grid-container">
     <!-- Trigger/Open The Modal -->
-    <button id="myBtn1" class="grid-item">MSUFCU Internship</button>
+    <button id="myBtn1" class="grid-item"><img src="internship.png" alt="computer on desk">MSUFCU Internship</button>
 
     <!-- The Modal -->
     <div id="myModal1" class="modal">
@@ -36,200 +37,284 @@
       <div class="modal-content">
         <span class="close">&times;</span>
 
-<h2>MSUFCU Internship</h2>
-<hr/>
-      </div>
+        <h2>MSUFCU Internship</h2>
+        <hr />
 
-    </div>
+                      </div>
 
-    <script>
-      // Get the modal
-      var modal1 = document.getElementById('myModal1');
+                    </div>
 
-      // Get the button that opens the modal
-      var btn1 = document.getElementById("myBtn1");
+                    <script>
+                      // Get the modal
+                      var modal1 = document.getElementById('myModal1');
 
-      // Get the <span> element that closes the modal
-      var span1 = document.getElementsByClassName("close")[0];
+                      // Get the button that opens the modal
+                      var btn1 = document.getElementById("myBtn1");
 
-      // When the user clicks the button, open the modal
-      btn1.onclick = function() {
-        modal1.style.display = "block";
-      }
+                      // Get the <span> element that closes the modal
+                      var span1 = document.getElementsByClassName("close")[0];
 
-      // When the user clicks on <span> (x), close the modal
-      span1.onclick = function() {
-        modal1.style.display = "none";
-      }
+                      // When the user clicks the button, open the modal
+                      btn1.onclick = function() {
+                        modal1.style.display = "block";
+                      }
 
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal1.style.display = "none";
-        }
-      }
-    </script>
-    <!-- Trigger/Open The Modal -->
-    <button id="myBtn" class="grid-item">Web Design</button>
+                      // When the user clicks on <span> (x), close the modal
+                      span1.onclick = function() {
+                        modal1.style.display = "none";
+                      }
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
+                      // When the user clicks anywhere outside of the modal, close it
+                      window.onclick = function(event) {
+                        if (event.target == modal) {
+                          modal1.style.display = "none";
+                        }
+                      }
+                    </script>
+                    <!-- Trigger/Open The Modal -->
+                    <button id="myBtn" class="grid-item"><img src="webdesign.png" alt="web design icon">Web Design</button>
 
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Web Design </h2>
-          <hr/>
-      </div>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
 
-    </div>
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Web Design </h2>
+                        <hr />
+                      </div>
 
-    <script>
-      // Get the modal
-      var modal = document.getElementById('myModal');
+                    </div>
 
-      // Get the button that opens the modal
-      var btn = document.getElementById("myBtn");
+                    <script>
+                      // Get the modal
+                      var modal = document.getElementById('myModal');
 
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[1];
+                      // Get the button that opens the modal
+                      var btn = document.getElementById("myBtn");
 
-      // When the user clicks the button, open the modal
-      btn.onclick = function() {
-        modal.style.display = "block";
-      }
+                      // Get the <span> element that closes the modal
+                      var span = document.getElementsByClassName("close")[1];
 
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function() {
-        modal.style.display = "none";
-      }
+                      // When the user clicks the button, open the modal
+                      btn.onclick = function() {
+                        modal.style.display = "block";
+                      }
 
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
-    </script>
-    <!-- Trigger/Open The Modal -->
-    <button id="myBtn2" class="grid-item">The Wall Street Journal</button>
+                      // When the user clicks on <span> (x), close the modal
+                      span.onclick = function() {
+                        modal.style.display = "none";
+                      }
 
-    <!-- The Modal -->
-    <div id="myModal2" class="modal">
+                      // When the user clicks anywhere outside of the modal, close it
+                      window.onclick = function(event) {
+                        if (event.target == modal) {
+                          modal.style.display = "none";
+                        }
+                      }
+                    </script>
+                    <!-- Trigger/Open The Modal -->
+                    <button id="myBtn2" class="grid-item"><img src="wsj.png" alt="newspaper">The Wall Street Journal</button>
 
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>The Wall Street Journal</h2>
-          <hr/>
-      </div>
+                    <!-- The Modal -->
+                    <div id="myModal2" class="modal">
 
-    </div>
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>The Wall Street Journal</h2>
+                        <hr />
 
-    <script>
-      // Get the modal
-      var modal2 = document.getElementById('myModal2');
+                        <div class="container">
+                          <p>I was hired by <a href="https://www.youtube.com/watch?v=8qaucV0RdoE">Saideh Ghods</a>,
+                            founder of <a href="https://en.wikipedia.org/wiki/Mahak">Mahak</a>,
+                            to photograph a headshot of her that was published in
+                            <i>The Wall Street Journal’s</i> <a href="https://www.wsj.com/articles/SB122609301920009441">The 50 Women to Watch 2008</a>
+                            on November 7, 2008.
 
-      // Get the button that opens the modal
-      var btn2 = document.getElementById("myBtn2");
+<p>The photographs included here were part of a series of images that I independently
+photographed and edited. I reviewed the images with Saideh Ghods and together
+we selected a final image to accompany the WSJ article written by <a href="https://en.wikipedia.org/wiki/Farnaz_Fassihi ">Farnaz Fassihi</a>.</p>
+<p>
+  Tools: Nikon D40, Velbon tripod, Adobe Lightroom, Adobe Photoshop
+</p>
+                          <div class="mySlides">
+                            <img src="1.jpg" style="width:100%">
+            </div>
+                            <div class="mySlides">
+                              <img src="2.jpg" style="width:100%">
+            </div>
+                              <div class="mySlides">
+                                <img src="3.jpg" style="width:100%">
+            </div>
+                                <div class="mySlides">
+                                  <img src="4.jpg" style="width:100%">
+            </div>
+                                  <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                  <a class="next" onclick="plusSlides(1)">❯</a>
 
-      // Get the <span> element that closes the modal
-      var span2 = document.getElementsByClassName("close")[2];
+                                  <div class="caption-container">
+                                    <p id="caption"></p>
+                                  </div>
 
-      // When the user clicks the button, open the modal
-      btn2.onclick = function() {
-        modal2.style.display = "block";
-      }
+                                  <div class="row">
+                                    <div class="column">
+                                      <img class="demo cursor" src="1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Wall Street Journal, November 2008">
+              </div>
+                                      <div class="column">
+                                        <img class="demo cursor" src="2.jpg" style="width:100%" onclick="currentSlide(2)" alt="The Wall Street Journal, November 2008">
+              </div>
+                                        <div class="column">
+                                          <img class="demo cursor" src="3.jpg" style="width:100%" onclick="currentSlide(3)" alt="The Wall Street Journal, November 2008">
+              </div>
+                                          <div class="column">
+                                            <img class="demo cursor" src="4.jpg" style="width:100%" onclick="currentSlide(4)" alt="The Wall Street Journal, November 2008">
+              </div>
+                                            <script>
+                                              var slideIndex = 1;
+                                              showSlides(slideIndex);
 
-      // When the user clicks on <span> (x), close the modal
-      span2.onclick = function() {
-        modal2.style.display = "none";
-      }
+                                              function plusSlides(n) {
+                                                showSlides(slideIndex += n);
+                                              }
 
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-        if (event.target == modal2) {
-          modal2.style.display = "none";
-        }
-      }
-    </script>
+                                              function currentSlide(n) {
+                                                showSlides(slideIndex = n);
+                                              }
+
+                                              function showSlides(n) {
+                                                var i;
+                                                var slides = document.getElementsByClassName("mySlides");
+                                                var dots = document.getElementsByClassName("demo");
+                                                var captionText = document.getElementById("caption");
+                                                if (n > slides.length) {
+                                                  slideIndex = 1
+                                                }
+                                                if (n < 1) {
+                                                  slideIndex = slides.length
+                                                }
+                                                for (i = 0; i < slides.length; i++) {
+                                                  slides[i].style.display = "none";
+                                                }
+                                                for (i = 0; i < dots.length; i++) {
+                                                  dots[i].className = dots[i].className.replace(" active", "");
+                                                }
+                                                slides[slideIndex - 1].style.display = "block";
+                                                dots[slideIndex - 1].className += " active";
+                                                captionText.innerHTML = dots[slideIndex - 1].alt;
+                                              }
+                                            </script>
+
+                                          </div>
+
+                                        </div>
+                                      </div>
+
+                                    </div>
+                                    <script>
+                                      // Get the modal
+                                      var modal2 = document.getElementById('myModal2');
+
+                                      // Get the button that opens the modal
+                                      var btn2 = document.getElementById("myBtn2");
+
+                                      // Get the <span> element that closes the modal
+                                      var span2 = document.getElementsByClassName("close")[2];
+
+                                      // When the user clicks the button, open the modal
+                                      btn2.onclick = function() {
+                                        modal2.style.display = "block";
+                                      }
+
+                                      // When the user clicks on <span> (x), close the modal
+                                      span2.onclick = function() {
+                                        modal2.style.display = "none";
+                                      }
+
+                                      // When the user clicks anywhere outside of the modal, close it
+                                      window.onclick = function(event) {
+                                        if (event.target == modal2) {
+                                          modal2.style.display = "none";
+                                        }
+                                      }
+                                    </script>
 
 
 
-    <script>
-      // Get the modal
-      var modal3 = document.getElementById('myModal3');
+                                    <script>
+                                      // Get the modal
+                                      var modal3 = document.getElementById('myModal3');
 
-      // Get the button that opens the modal
-      var btn3 = document.getElementById("myBtn3");
+                                      // Get the button that opens the modal
+                                      var btn3 = document.getElementById("myBtn3");
 
-      // Get the <span> element that closes the modal
-      var span3 = document.getElementsByClassName("close")[3];
+                                      // Get the <span> element that closes the modal
+                                      var span3 = document.getElementsByClassName("close")[3];
 
-      // When the user clicks the button, open the modal
-      btn3.onclick = function() {
-        modal3.style.display = "block";
-      }
+                                      // When the user clicks the button, open the modal
+                                      btn3.onclick = function() {
+                                        modal3.style.display = "block";
+                                      }
 
-      // When the user clicks on <span> (x), close the modal
-      span3.onclick = function() {
-        modal3.style.display = "none";
-      }
+                                      // When the user clicks on <span> (x), close the modal
+                                      span3.onclick = function() {
+                                        modal3.style.display = "none";
+                                      }
 
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-        if (event.target == modal3) {
-          modal3.style.display = "none";
-        }
-      }
-    </script>
+                                      // When the user clicks anywhere outside of the modal, close it
+                                      window.onclick = function(event) {
+                                        if (event.target == modal3) {
+                                          modal3.style.display = "none";
+                                        }
+                                      }
+                                    </script>
 
-    <!-- Trigger/Open The Modal -->
-    <button id="myBtn4" class="grid-item">Graphic Design</button>
+                                    <!-- Trigger/Open The Modal -->
+                                    <button id="myBtn4" class="grid-item"><img src="graphicdesign.png" alt="adobe creative cloud logo">Graphic Design</button>
 
-    <!-- The Modal -->
-    <div id="myModal4" class="modal">
+                                    <!-- The Modal -->
+                                    <div id="myModal4" class="modal">
 
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Graphic Design </h2>
-          <hr/>
+                                      <!-- Modal content -->
+                                      <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <h2>Graphic Design </h2>
+                                        <hr />
 
-      </div>
+                                      </div>
 
-    </div>
+                                    </div>
 
-    <script>
-      // Get the modal
-      var modal4 = document.getElementById('myModal4');
+                                    <script>
+                                      // Get the modal
+                                      var modal4 = document.getElementById('myModal4');
 
-      // Get the button that opens the modal
-      var btn4 = document.getElementById("myBtn4");
+                                      // Get the button that opens the modal
+                                      var btn4 = document.getElementById("myBtn4");
 
-      // Get the <span> element that closes the modal
-      var span4 = document.getElementsByClassName("close")[3];
+                                      // Get the <span> element that closes the modal
+                                      var span4 = document.getElementsByClassName("close")[3];
 
-      // When the user clicks the button, open the modal
-      btn4.onclick = function() {
-        modal4.style.display = "block";
-      }
+                                      // When the user clicks the button, open the modal
+                                      btn4.onclick = function() {
+                                        modal4.style.display = "block";
+                                      }
 
-      // When the user clicks on <span> (x), close the modal
-      span4.onclick = function() {
-        modal4.style.display = "none";
-      }
+                                      // When the user clicks on <span> (x), close the modal
+                                      span4.onclick = function() {
+                                        modal4.style.display = "none";
+                                      }
 
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-        if (event.target == modal4) {
-          modal4.style.display = "none";
-        }
-      }
-    </script>
-  </div>
+                                      // When the user clicks anywhere outside of the modal, close it
+                                      window.onclick = function(event) {
+                                        if (event.target == modal4) {
+                                          modal4.style.display = "none";
+                                        }
+                                      }
+                                    </script>
+                                  </div>
 
-  </div>
+                                </div>
 
 </body>
 
