@@ -18,9 +18,9 @@
     grid-column-gap: 35px;
     grid-row-gap: 25px;
     background-color: #fafafa;
-    padding: 20px;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-top: 75px;
   }
 
@@ -30,7 +30,8 @@
     font-size: 1rem;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
     border-radius: 6px;
-    min-width: 215px;
+    min-width: 254px;
+
   }
 
   .grid-item:hover {
@@ -140,7 +141,7 @@
     margin: auto;
     padding: 20px;
     border: 3px solid transparent;
-    width: 60%;
+    width: 80%;
     text-decoration: none;
     border-radius: 8px;
 
@@ -196,86 +197,39 @@ color: #585858;
 font-size: 20px;
 }
 
+.previewContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    padding-bottom: 15px;
+  }
 
-img {
-  vertical-align: middle;
-}
-.p {
-  color: #000;
-  font-style: bolder;
-}
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
+
+/* Style the images inside the grid */
+.previewContainer .previewItem img {
+    opacity: 1;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 75px;
+    display: block;
+    margin: auto;
+
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
+.previewContainer .previewItem img:hover {
+    opacity: 0.4;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
+.expandContainer img {
+  max-width: 100%;
+  max-height: auto;
+  height: auto;
   width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: left;
-  background-color: #fafafa;
-  padding: 2px 16px;
-  color: #000;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
+  margin: auto;
+  display: block;
 }
 
   /*tablet*/
@@ -284,6 +238,11 @@ img {
     .grid-container {
       grid-template-columns: 1fr 1fr;
       padding-top: 75px;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    .previewContainer {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
   }
 
@@ -307,6 +266,10 @@ img {
     .grid-container {
       grid-template-columns: 1fr;
       padding-top: 50px;
+    }
+
+    .previewContainer {
+      grid-template-columns: 1fr 1fr 1fr;
     }
 
     .logo {
