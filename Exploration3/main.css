@@ -1,0 +1,104 @@
+:root {
+  --modal-content-bg-color: #FFF;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #585858;
+  text-decoration-color: #fff;
+  font-size: 14px;
+  font-family: 'Comfortaa', cursive;
+  margin: 0px;
+}
+
+.iconContainer a i {
+  float: left;
+  color: #fff;
+  font-size: 36px;
+  line-height: 25px;
+  padding-right: 25px;
+}
+
+.hamburgerContainer {
+  display: none;
+  position: fixed;
+  top:85px;
+}
+
+.hamburgerContainer a {
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: bold;
+  display: block;
+  line-height: 50px;
+  text-align: left;
+}
+
+header {
+  width: 100%;
+  padding-bottom: 0px;
+  top: 0;
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.6;
+  padding-right: 445px;
+  overflow: hidden;
+  padding: 50px 40px;
+}
+
+header a.logo {
+  font-size: 36px;
+  font-weight: 400;
+  color: #fff;
+  font-family: 'Comfortaa', cursive;
+
+}
+
+header a {
+  color: #fff;
+  text-align: right;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 25px;
+  font-weight: 300;
+
+}
+
+.header-right a:hover {
+  color: #FFFFFF;
+}
+
+.header-right {
+  float: right;
+}
+
+
+/*tablet*/
+@media screen and (max-width: 1200px) {
+
+}
+
+/*mobile phone*/
+@media screen and (max-width: 600px) {
+  header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right a:hover {
+    color: #FFFFFF;
+  }
+
+  .header-right {
+    float: none;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+}
