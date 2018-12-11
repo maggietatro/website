@@ -30,21 +30,19 @@
         <a href="#" class="logo">Maggie Tatro</a>
     </nav>
   </header>
-
+  <script>
+  function showHideMenu() {
+    var x = document.getElementById("hamburgerContainer");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+    return false;
+  }
+  </script>
 
 </body>
-
-<script>
-function showHideMenu() {
-  var x = document.getElementById("hamburgerContainer");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-  return false;
-}
-</script>
 
 
   <html>

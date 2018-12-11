@@ -1,0 +1,239 @@
+<html>
+<head>
+  <title>Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="portfolio.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
+<link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet"></head>
+<body>
+
+  <header>
+  <div class="iconContainer">
+    <a href="javascript:void(0);" class="icon" onclick="showHideMenu()">
+      <i class="fas fa-equals" aria-hidden="true"></i>
+    </a>
+  </div>
+
+        <div id="hamburgerContainer" class="hamburgerContainer">
+
+            <a href="javascript:void(0);" class="icon" onclick="showHideMenu()">
+              <i class="fas fa-times" aria-hidden="true"></i>
+            </a>
+
+          <ul>
+            <li>
+              <a href="home.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+          <li>
+          <a href="portfolio_main.html">Portfolio</a>
+          </li>
+          <li>
+          <a href="skills.html">Skills</a>
+          </li>
+        </ul>
+        </div>
+        <nav class="header-center">
+        <a href="home.html">Maggie Tatro</a>
+        </nav>
+  </header>
+
+  <main>
+    <div class="grid-container">
+    <div class="grid-item-span">
+    <h2>The Wall Street Journal</h2>
+
+    <p>I was hired by <a href="https://www.youtube.com/watch?v=8qaucV0RdoE">Saideh Ghods</a>, founder of <a href="https://en.wikipedia.org/wiki/Mahak">Mahak</a>, to photograph a headshot of her that was published in The Wall Street Journal’s <a href="https://www.wsj.com/articles/SB122609301920009441">The 50 Women to Watch 2008</a>.</p>
+
+    <p>This freelance opportunity introduced me to an inspirational person and to the intricacies of freelance work.</p>
+
+    <p>I spent several years as a part-time freelance photographer and managed multiple projects in the US and abroad. I worked with diverse clients to determine and succesfully meet project specifications and deadlines. </p>
+
+    <p>Eventually, I sold my photography equipment and stopped freelancing so I could focus on developing skills that aligned with my long-term professional goals.</p>
+
+    <p>I still have a deep appreciation for photography - but I no longer enjoy being behind the camera.</p>
+
+
+    <p><i>Tools: Nikon D40, Velbon tripod, Adobe Creative Suite</i></p>
+  </div>
+  </div>
+<hr />
+<div class="grid-container  no-padding">
+<div class="grid-item-span">
+			<div class="flex-container">
+				<div class="item" onclick="openModal();currentSlide(1)">
+					<img class="thumb" src="images/portfolio/wsj/wsj1.jpg" />
+				</div>
+				<div class="item" onclick="openModal();currentSlide(2)">
+					<img class="thumb" src="images/portfolio/wsj/wsj2.jpg" />
+				</div>
+				<div class="item" onclick="openModal();currentSlide(3)">
+					<img class="thumb" src="images/portfolio/wsj/wsj3.jpg" />
+				</div>
+				<div class="item" onclick="openModal();currentSlide(4)">
+					<img class="thumb" src="images/portfolio/wsj/wsj4.jpg" />
+				</div>
+				<div class="item" onclick="openModal();currentSlide(5)">
+					<img class="thumb" src="images/portfolio/wsj/wsj5.jpg" />
+				</div>
+				<div class="item" onclick="openModal();currentSlide(6)">
+					<img class="thumb" src="images/portfolio/wsj/wsj6.jpg" />
+				</div>
+				<div class="item" onclick="openModal();currentSlide(7)">
+					<img class="thumb" src="images/portfolio/wsj/wsj7.png" />
+				</div>
+
+			</div>
+		</div>
+  	</div>
+
+	  <!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()"><i class="fas fa-times" aria-hidden="true"></i></span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <img src="images/portfolio/wsj/wsj1.jpg" onclick="plusSlides(1)">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/portfolio/wsj/wsj2.jpg" onclick="plusSlides(1)">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/portfolio/wsj/wsj3.jpg" onclick="plusSlides(1)">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/portfolio/wsj/wsj4.jpg" onclick="plusSlides(1)">
+    </div>
+	<div class="mySlides">
+      <img src="images/portfolio/wsj/wsj5.jpg" onclick="plusSlides(1)">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/portfolio/wsj/wsj6.jpg" onclick="plusSlides(1)">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/portfolio/wsj/wsj7.png" onclick="plusSlides(1)">
+    </div>
+	
+	    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+	<div class="flex-container">
+		<div class="item" onclick="currentSlide(1)">
+		  <img class="mthumb" src="images/portfolio/wsj/wsj1.jpg" alt="Saideh Ghods | Photo by Maggie Tatro | Copyright © 2008">
+		</div>
+
+		<div class="item" onclick="currentSlide(2)">
+		  <img class="mthumb" src="images/portfolio/wsj/wsj2.jpg"  alt="Saideh Ghods | Photo by Maggie Tatro | Copyright © 2008">
+		</div>
+
+		<div class="item" onclick="currentSlide(3)">
+		  <img class="mthumb" src="images/portfolio/wsj/wsj3.jpg"  alt="Saideh Ghods | Photo by Maggie Tatro | Copyright © 2008">
+		</div>
+
+		<div class="item" onclick="currentSlide(4)">
+		  <img class="mthumb" src="images/portfolio/wsj/wsj4.jpg"  alt="Saideh Ghods | Photo by Maggie Tatro | Copyright © 2008">
+		</div>
+		<div class="item" onclick="currentSlide(5)">
+		  <img class="mthumb" src="images/portfolio/wsj/wsj5.jpg"  alt="Saideh Ghods | Photo by Maggie Tatro | Copyright © 2008">
+		</div>
+
+		<div class="item" onclick="currentSlide(6)">
+		  <img class="mthumb" src="images/portfolio/wsj/wsj6.jpg"  alt="Saideh Ghods | Photo by Maggie Tatro | Copyright © 2008">
+		</div>
+
+		<div class="item" onclick="currentSlide(7)">
+		  <img class="mthumb" src="images/portfolio/wsj/wsj7.png"  alt="Saideh Ghods | Photo by Maggie Tatro | Copyright © 2008">
+		</div>
+
+	</div>
+  </div>
+</div>
+
+</main>
+
+<footer>
+	<div>
+		<hr />
+	</div>
+  <p>Designed and Coded by Maggie Tatro | Copyright © 2018-2019 | <a href="https://www.linkedin.com/in/maggietatro/">Let's connect on LinkedIn!</a></p></footer>
+</body>
+
+<script>
+function showHideMenu() {
+var x = document.getElementById("hamburgerContainer");
+if (x.style.display === "block") {
+  x.style.display = "none";
+} else {
+  x.style.display = "block";
+}
+return false;
+}
+// Open the Modal
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("mthumb");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+	dots[i].parentNode.className = dots[i].parentNode.className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  dots[slideIndex-1].parentNode.className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+  document.onkeydown = function (event) {
+    event = event || window.event;
+    var isModalOpen = document.getElementById("myModal").style.display == "block";
+    if ( isModalOpen && event.keyCode == 27) { //escape
+		    closeModal();
+    } else if (isModalOpen && event.keyCode == 37) { //left arrow
+      plusSlides(-1);
+    } else if (isModalOpen && event.keyCode == 39) { //right arrow
+      plusSlides(1);
+    }
+}
+</script>
+
+</html>
