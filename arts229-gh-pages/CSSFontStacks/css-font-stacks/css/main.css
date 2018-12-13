@@ -1,0 +1,121 @@
+/*For demo purposes only*/
+
+body {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 40px;
+}
+
+.container {
+	width: 80%;
+	max-width: 760px;
+	margin: 0 auto;
+	margin-top: 96px; /*Offset switcher*/
+}
+
+.top-bar {
+	display: block;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 64px;
+	background: #424953;
+	font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+}
+
+.top-bar span {
+	line-height: 64px;
+	margin-left: 24px;
+	font-weight: bold;
+	font-size: 24px;
+	color: #fff;
+	float: left;
+	letter-spacing: 0;
+}
+
+.select-container {
+	right: 20px;
+	top: 10px;
+	display: block;
+	font-size: 16px!important;
+	position: absolute;
+	z-index: 1;
+	border: 1px solid #3c4551;
+	width: 340px;
+	border-radius: 3px;
+	overflow: hidden;
+	background: #5b6675;
+}
+
+.select-container:after {
+	top: 50%;
+	right: 18px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-top-color: #fff;
+	border-width: 5px;
+	margin-top: -2px;
+	z-index: 100;
+}
+
+.select-container select {
+	padding: 10px 16px;
+	width: 130%;
+	border: none;
+	box-shadow: none;
+	background: transparent;
+	background-image: none;
+	-webkit-appearance: none;
+	font-size: 14px;
+	outline: none;
+	height: 41px;
+	color: #fff;
+}
+
+header .button {
+	display: inline-block;
+	background: #6bc6a1;
+	text-decoration: none;
+	color: #fff;
+	padding: .5em 1em;
+	border-radius: .2em;
+	font-size: 1.1em;
+	border: none;
+}
+
+header .share {
+	margin-left: 20px;
+	font-size: .9em;
+}
+
+header .share a {
+	text-decoration: none;
+	color: #424953;
+	margin: auto 5px auto 10px; 
+	cursor: pointer;
+}
+
+header .share a:hover {
+	color: #97b0d3;
+}
+
+.share i.fab {
+	color: #333;
+	border: 1px solid #333;
+	margin-right: 10px;
+}
+
+@media screen and (max-width: 740px){
+	.top-bar span, .button {
+		display: none;
+	}
+	.select-container {
+		position: relative;
+		margin: 0 auto;
+		width: 95%;
+		right: 0;
+}
