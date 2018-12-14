@@ -1,0 +1,70 @@
+<html>
+<head>
+  <title>Project 2 Style Guide</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
+<link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet"></head>
+<body>
+
+
+    <header>
+    <div class="iconContainer">
+      <a href="javascript:void(0);" class="icon" onclick="showHideMenu()">
+        <i class="fas fa-equals" aria-hidden="true"></i>
+      </a>
+    </div>
+
+          <div id="hamburgerContainer" class="hamburgerContainer">
+
+              <a href="javascript:void(0);" class="icon" onclick="showHideMenu()">
+                <i class="fas fa-times" aria-hidden="true"></i>
+              </a>
+
+            <ul>
+              <li>
+                <a href="home.html">Home</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+            <li>
+            <a href="portfolio_main.html">Portfolio</a>
+            </li>
+            <li>
+            <a href="skills.html">Skills</a>
+            </li>
+          </ul>
+          </div>
+    <nav class="header-center">
+        <span class="logo">Maggie Tatro</span>
+    </nav>
+    </header>
+
+<h1>H1</h1>
+<h2>H2</h2>
+<h3>H3</h3>
+<p> paragraph text</p>
+
+
+<button class="hover">View More</button>
+
+<hr>
+
+<footer>Designed and Coded by Maggie Tatro | Copyright © 2018 | Made in Michigan</footer>
+</body>
+
+<script>
+function showHideMenu() {
+var x = document.getElementById("hamburgerContainer");
+if (x.style.display === "block") {
+  x.style.display = "none";
+} else {
+  x.style.display = "block";
+}
+return false;
+}
+</script>
+</html>
