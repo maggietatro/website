@@ -1,0 +1,87 @@
+<html>
+<head>
+  <title>About</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
+<link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet"></head>
+</head>
+<body>
+
+  <header>
+  <div class="iconContainer">
+    <a href="javascript:void(0);" class="icon" onclick="showHideMenu()">
+      <i class="fas fa-equals" aria-hidden="true"></i>
+    </a>
+  </div>
+
+        <div id="hamburgerContainer" class="hamburgerContainer">
+
+            <a href="javascript:void(0);" class="icon" onclick="showHideMenu()">
+              <i class="fas fa-times" aria-hidden="true"></i>
+            </a>
+
+          <ul>
+            <li>
+              <a href="home.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+          <li>
+          <a href="portfolio_main.html">Portfolio</a>
+          </li>
+          <li>
+          <a href="skills.html">Skills</a>
+          </li>
+        </ul>
+        </div>
+  <nav class="header-center">
+  <a href="home.html">Maggie Tatro</a>
+  </nav>
+  </header>
+
+  <main>
+    <div class="grid-container no-bottom-padding">
+    <div class="grid-item-span">
+    <h2>Hi! I'm Maggie.</h2>
+
+<p>I'm a UX Designer at <a href="https://www.msufcu.org/">MSU Federal Credit Union</a> and consider myself lucky to be surrounded by a team of super helpful and skilled IT professionals.</p>
+
+<p>Professionally, I'm drawn to work that requires attention to detail and a combination of independence and collaboration. I began working in middle school and over the years I've accumulated weird, wacky, and wonderful employment experiences that have been hugely educational - sometimes I refer back to those experiences to inform my decisions as a designer.</p>
+
+	<p>Personality-wise, I'm ambiverted and comfortable interacting with different people. I don't shy away from opportunities to improve my communication skills and I try to interact with others in ways that make them feel at ease. I prefer to observe and listen before I speak, to maintain a positive attitude, and to treat challenges as learning opportunities.</p>
+
+    <p> My hobbies include reading, traveling, hiking, singing along to my favorite songs, and hosting board game nights with my husband, Kevin.</p>
+  </div>
+<div class="grid-item-span">
+    <img class="about" src="images/maggie.png" alt="image of maggie tatro"/>
+  </div>
+  </div>
+
+
+  </main>
+
+
+<footer>
+	<div>
+		<hr />
+	</div>
+  <p>Designed and Coded by Maggie Tatro | Copyright © 2018-2019 | <a href="https://www.linkedin.com/in/maggietatro/">Let's connect on LinkedIn!</a></p></footer>
+</body>
+
+<script>
+function showHideMenu() {
+var x = document.getElementById("hamburgerContainer");
+if (x.style.display === "block") {
+  x.style.display = "none";
+} else {
+  x.style.display = "block";
+}
+return false;
+}
+</script>
+
+</html>
