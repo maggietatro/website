@@ -1,0 +1,114 @@
+<html>
+<head>
+  <title>Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
+<link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet"></head>
+</head>
+<body>
+
+  <header>
+
+  <div class="iconContainer">
+    <a href="javascript:void(0);" class="icon" onclick="showHideMenu()">
+      <i class="fas fa-equals" aria-hidden="true"></i>
+    </a>
+  </div>
+
+        <div id="hamburgerContainer" class="hamburgerContainer">
+
+            <a href="javascript:void(0);" class="icon" onclick="showHideMenu()">
+              <i class="fas fa-times" aria-hidden="true"></i>
+            </a>
+
+          <ul>
+            <li>
+              <a href="home.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+          <li>
+          <a href="portfolio_main.html">Portfolio</a>
+          </li>
+          <li>
+          <a href="skills.html">Skills</a>
+          </li>
+        </ul>
+        </div>
+        <nav class="header-center">
+        <a href="home.html">Maggie Tatro</a>
+        </nav>
+  </header>
+
+<main>
+<div class="grid-container">
+
+<div class="grid-item2">
+<h2 class="portfolio1">MSUFCU</h2>
+<p class="portfolioA">I create design solutions to meet business needs.</p>
+<a href="portfolio_msufcu.html"><button class="button-left">Learn More</button></a>
+</div>
+
+<div class="grid-img2">
+<img src="images/icon_msufcu.png" alt="image of office building"/>
+</div>
+
+</div>
+
+<hr>
+
+<div class="grid-container">
+
+<div class="grid-img">
+<img src="images/icon_webdesign.png" alt="image of web design"/>
+</div>
+
+<div class="grid-item">
+<h2 class="portfolio2">maggietatro.com</h2>
+<p class="portfolioB">I designed and coded a portfolio site.</p>
+<a href="portfolio_webdesign.html"><button class="button-right">Learn More</button></a>
+</div>
+
+</div>
+
+<hr>
+
+<div class="grid-container">
+
+<div class="grid-item2">
+<h2 class="portfolio3">The Wall Street Journal</h2>
+<p class="portfolioC">I photographed Saideh Ghods, founder of Mahak.</p>
+<a href="portfolio_wsj.html"><button class="button-left">Learn More</button></a>
+</div>
+
+<div class="grid-img2">
+<img src="images/icon_wsj.png" alt="image of camera"/>
+</div>
+
+</div>
+
+    </main>
+
+    <footer>
+	<div>
+		<hr />
+	</div>
+      <p>Designed and Coded by Maggie Tatro | Copyright © 2018-2019 | <a href="https://www.linkedin.com/in/maggietatro/">Let's connect on LinkedIn!</a></p></footer></body>
+
+<script>
+function showHideMenu() {
+var x = document.getElementById("hamburgerContainer");
+if (x.style.display === "block") {
+  x.style.display = "none";
+} else {
+  x.style.display = "block";
+}
+return false;
+}
+</script>
+
+</html>
