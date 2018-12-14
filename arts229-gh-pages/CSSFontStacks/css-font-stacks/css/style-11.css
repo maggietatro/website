@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Open+Sans');
+
+/*Default browser font size, leave as 16px*/
+html {
+	font-size: 16px;
+}
+
+/*All body copy*/
+body {
+	font-size: 1em; /*Control master font size here*/
+	font-family: 'Open Sans', sans-serif;
+	color: #555;
+	line-height: 1.6;
+	font-weight: 400;
+	letter-spacing: 0.01em;
+}
+
+/*All headings*/
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 600;
+	color: #222;
+	letter-spacing: 0;
+}
+
+/*Individual headings*/
+
+h1 {
+	font-size: 3.4em;
+}
+
+h2 {
+	font-size: 2.9em;
+	margin-bottom: .2em;
+}
+
+h3 {
+	font-size: 2.3em;
+	margin-bottom: .6em;
+}
+
+h4 {
+	font-size: 1.9em;
+	margin-bottom: .6em;
+}
+
+h5 {
+	font-size: 1.5em;
+	margin-bottom: 0;
+}
+
+h6 {
+	font-size: 1.2em;
+	margin-bottom: -.2em;
+	margin-top: 1.4em;
+}
+
+/*Paragraph and miscellaneous styles*/
+
+p {
+	font-size: 1em;
+	margin-bottom: 1.6em;
+}
+
+header h1 {
+	margin-bottom: 0;
+}
+
+header p {
+	font-size: 1.3em;
+	margin-top: 1em;
+}
+
+blockquote {
+	border-left: .2em solid #eee;
+	margin-left: 1.8em;
+	padding-left: 1.4em;
+}
+
+mark {
+	padding: 0 .25em;
+	color: #51504a;
+	background: #faf1cd;
+}
+
+small {
+	font-size: .8em;
+}

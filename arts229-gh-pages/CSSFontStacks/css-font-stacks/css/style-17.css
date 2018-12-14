@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin|Volkhov');
+
+/*Default browser font size, leave as 16px*/
+html {
+	font-size: 16px;
+}
+
+/*All body copy*/
+body {
+	font-size: 1.1em; /*Control master font size here*/
+	font-family: 'Libre Franklin', sans-serif;
+	color: #666;
+	line-height: 1.7;
+	font-weight: 400;
+	letter-spacing: .02em;
+}
+
+/*All headings*/
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Volkhov', serif;
+	color: #222;
+	letter-spacing: 0;
+}
+
+/*Individual headings*/
+
+h1 {
+	font-size: 2.8em;
+}
+
+h2 {
+	font-size: 2.1em;
+	margin-bottom: .4em;
+}
+
+h3 {
+	font-size: 1.8em;
+	margin-bottom: .8em;
+}
+
+h4 {
+	font-size: 1.4em;
+	margin-bottom: .8em;
+}
+
+h5 {
+	font-size: 1.2em;
+	margin-bottom: .7em;
+}
+
+h6 {
+	font-size: .9em;
+	margin-bottom: -.2em;
+	margin-top: 1.4em;
+}
+
+/*Paragraph and miscellaneous styles*/
+
+p {
+	font-size: 1em;
+	margin-bottom: 1.6em;
+}
+
+header h1 {
+	margin-bottom: 0;
+}
+
+header p {
+	font-size: 1.2em;
+	margin-top: 1em;
+}
+
+blockquote {
+	border-left: .2em solid #eee;
+	margin-left: 1.8em;
+	padding-left: 1.4em;
+	font-style: italic;
+}
+
+mark {
+	padding: 0 .25em;
+	color: #51504a;
+	background: #faf1cd;
+}
+
+small {
+	font-size: .8em;
+}

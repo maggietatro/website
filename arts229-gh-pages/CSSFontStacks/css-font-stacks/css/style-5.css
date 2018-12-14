@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Playfair+Display');
+
+/*Default browser font size, leave as 16px*/
+html {
+	font-size: 16px;
+}
+
+/*All body copy*/
+body {
+	font-size: 1.1em; /*Control master font size here*/
+	font-family: 'Lato', sans-serif;
+	color: #666;
+	line-height: 1.7;
+	font-weight: 300;
+}
+
+/*All headings*/
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Playfair Display', serif;
+	color: #222;
+	font-weight: 700;
+}
+
+/*Individual headings*/
+
+h1 {
+	font-size: 3.2em;
+	margin-bottom: .3em;
+}
+
+h2 {
+	font-size: 2.3em;
+	margin-bottom: .3em;
+}
+
+h3 {
+	font-size: 2em;
+	margin-bottom: .5em;
+	margin-top: .6em;
+}
+
+h4 {
+	font-size: 1.6em;
+	margin-bottom: .4em;
+}
+
+h5 {
+	font-size: 1.4em;
+	margin-bottom: -.1em;
+}
+
+h6 {
+	font-size: 1em;
+	margin-bottom: -.4em;
+}
+
+/*Paragraph and miscellaneous styles*/
+
+p {
+	font-size: 1em;
+	margin-bottom: 1.6em;
+}
+
+header p {
+	font-size: 1.2em;
+	margin-top: .8em;
+}
+
+blockquote {
+	border-left: .2em solid #eee;
+	margin-left: 1.8em;
+	padding-left: 1.4em;
+}
+
+mark {
+	padding: 0 .25em;
+	color: #51504a;
+	background: #faf1cd;
+}
+
+small {
+	font-size: .8em;
+}

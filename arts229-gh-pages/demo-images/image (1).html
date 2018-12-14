@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>images</title>
+
+  <style>
+    body {
+      background: #74B4F1;
+      color: white;
+      text-align: center;
+      font-size: 48px;
+    }
+
+    br {
+      height: 150px;
+    }
+
+
+    /* responsive image */
+    .image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Background layer with an image */
+    .backdrop {
+      background: url("puppy.jpeg") center;
+      background-size: contain;
+      width: 1280px;
+      height: 960px;
+      margin: 0 auto;
+    }
+
+    /* Dark foreground layer, with white text, set to "multiply" mix blend mode */
+    .text {
+      color: white;
+      background: #715826;
+      mix-blend-mode: multiply;
+      text-align: center;
+      margin: 0;
+      font-size: 8em;
+      font-family: sans-serif;
+      font-weight: 800;
+      height: 960px;
+      width: 1280px;
+      padding-top: 50px;
+      box-sizing: border-box;
+      transition: font-weight .5s, padding-top .5s;
+    }
+
+    .text:hover {
+      font-weight: 200;
+      padding-top: 300px;
+    }
+
+
+    /* clipping image to text */
+    .clip {
+      background: url("rainbow.jpeg") center;
+      background-clip: text;
+      /*clips image to text element */
+      color: transparent;
+      /* sets text to clear so you can see image */
+      height: 400px;
+      font-size: 8em;
+      font-family: sans-serif;
+      font-weight: 800;
+    }
+
+    /* background blend modes and shape clipping */
+    .path {
+      background-color: black;
+      background: url("rainbow.jpeg") center, linear-gradient(to right, #f12711, #f5af19);
+      width: 600px;
+      height: 400px;
+      margin: 0 auto;
+      background-size: cover;
+      -webkit-clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+      /* this is the clipping shape */
+      clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+      /* this is the clipping shape */
+      filter: blur(0px);
+      /* no blur on default state */
+      transition: transform .5s, background-blend-mode .5s, filter .5s;
+      /* timing for hover effects */
+    }
+
+    .path:hover {
+      transform: scale(1.2);
+      background-blend-mode: screen;
+      filter: blur(10px);
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>images</h1>
+
+  <!-- responsive image -->
+  <img src="puppy.jpeg" alt="puppies"  class="image" />
+  <p>quick responsive image by using max-width:100% </p>
+  <br />
+
+  <!-- text blending with image below -->
+  <div class="backdrop">
+    <p class="text">puppy</p>
+    <p><a href="https://css-tricks.com/css-techniques-and-effects-for-knockout-text/">css tricks technique for knockout text</a></p>
+  </div>
+  <br />
+
+  <!-- fit image in text -->
+  <div>
+    <p class="clip">rainbow</p>
+    <p><a href="https://css-tricks.com/css-techniques-and-effects-for-knockout-text/">css tricks technique for clipping text</a></p>
+  </div>
+  <br /><br />
+
+  <!-- fit image to shapes -->
+  <div class="path"> </div>
+  <p><a href="https://bennettfeely.com/clippy/">shape clipping</a></p>
+  <p><a href="https://css-playground.com/view/39/css_filter_playground">blurring filter</a></p>
+  <p><a href="https://www.w3schools.com/cssref/pr_background-blend-mode.asp">css background blend modes on w3schools</a></p>
+
+</body>
+
+</html>
