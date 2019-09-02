@@ -263,6 +263,13 @@ text-decoration: underline;
   font-family: 'Helvetica', sans-serif;
 }
 
+li a:hover {
+  color: #434E6C;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  font-weight: 700;
+}
+
 p {
   font-weight: 400;
   font-family: 'Helvetica', sans-serif;
@@ -276,18 +283,18 @@ p a {
   font-family: 'Helvetica', sans-serif;
 }
 
-.grid-item2 h2.portfolio3 {
-  min-width:200px;
-}
-.grid-item2 h2.portfolio1 {
-  min-width:225px;
-}
-
 p a:hover {
   color: #434E6C;
   text-decoration: underline;
   text-decoration-style: solid;
   font-weight: 700;
+}
+
+.grid-item2 h2.portfolio3 {
+  min-width:200px;
+}
+.grid-item2 h2.portfolio1 {
+  min-width:225px;
 }
 
 hr {
