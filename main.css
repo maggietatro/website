@@ -53,7 +53,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #FBF9F9;
+  background-color: #FFFFFF;
   transition: opacity .5s ease-in-out;
 
 }
@@ -259,12 +259,12 @@ li a {
   color: #434E6C;
   text-decoration: none;
   font-weight: 700;
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 p {
   font-weight: 400;
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 p a {
