@@ -257,7 +257,7 @@ li {
 
 li a {
   color: #434E6C;
-text-decoration: underline;
+text-decoration: none;
   text-decoration-style: solid;
   font-weight: 700;
   font-family: 'Helvetica', sans-serif;
@@ -277,7 +277,7 @@ p {
 
 p a {
   color: #434E6C;
-	text-decoration: underline;
+	text-decoration: none;
   text-decoration-style: solid;
   font-weight: 700;
   font-family: 'Helvetica', sans-serif;
