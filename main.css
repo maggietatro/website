@@ -257,7 +257,9 @@ li {
 
 li a {
   color: #434E6C;
-  text-decoration: none;
+text-decoration: underline;
+  text-decoration-color: #363030;
+  text-decoration-style: solid;
   font-weight: 700;
   font-family: 'Helvetica', sans-serif;
 }
@@ -269,7 +271,8 @@ p {
 
 p a {
   color: #434E6C;
-  text-decoration: none;
+	text-decoration: underline;
+  text-decoration-style: solid;
   font-weight: 700;
   font-family: 'Helvetica', sans-serif;
 }
@@ -284,6 +287,7 @@ p a {
 p a:hover {
   color: #434E6C;
   text-decoration: underline;
+  text-decoration-style: solid;
   font-weight: 700;
 }
 
