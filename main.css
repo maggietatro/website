@@ -441,7 +441,9 @@ img {
     text-align: center;
   }
 
-
+li {
+    font-size: 14px;
+}
 
   .hamburgerContainer .icon {
     padding: 25px 50px;
