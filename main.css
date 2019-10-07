@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #fafafa;
   color: #363030;
   font-size: 16px;
   font-weight: 700;
@@ -53,7 +53,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #FFFFFF;
+  background-color: #fafafa;
   transition: opacity .5s ease-in-out;
 
 }
