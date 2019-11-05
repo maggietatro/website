@@ -14,16 +14,6 @@ body {
   margin: 0px;
 }
 
-.sheep img {
-  width: 35px;
-  height: 35px;
-  animation-name: example;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  margin-top: 60px;
-}
-
 @keyframes example {
 from {
     transform: translateX(5px);
@@ -128,11 +118,6 @@ button {
   text-align: left;
 
 }
-
-a .fa-linkedin {
-  color: #3c7dc0;
-}
-
 
 
 /* The Modal (background) */
