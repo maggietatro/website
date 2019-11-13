@@ -113,6 +113,30 @@ header a {
   float: right;
 }
 
+footer {
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  top: 0;
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.6;
+  padding-right: 445px;
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 15px 10px;
+}
+
+.footer-right a:hover {
+  background-color: #3c7dc0;
+  color: #FFFFFF;
+}
+
+.footer-right {
+  float: right;
+}
+
 button {
   border: none;
   text-align: left;
