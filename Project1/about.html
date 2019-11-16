@@ -598,6 +598,15 @@ Misc.       </h3>
         }
       }
     </script>
+    <script>
+	function openImg(imgs, modal) {
+	var expandImg = document.getElementById(modal).getElementsByClassName("expandedImg")[0];
+	var imgText = document.getElementById(modal).getElementsByClassName("imgtext")[0];
+	expandImg.src = imgs.src;
+	imgText.innerHTML = imgs.alt;
+	expandImg.parentElement.style.display = "block";
+	}
+     </script>
 	
 </body>
 
