@@ -120,8 +120,7 @@ footer {
   top: 0;
   display: block;
   text-align: center;
-  font-size: 1rem;
-  font-weight: 800;
+  font-size: .8rem;
   line-height: 1.6;
   overflow: hidden;
 }
