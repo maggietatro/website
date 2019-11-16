@@ -115,14 +115,12 @@ header a {
 
 footer {
   width: 100%;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  top: 0;
   display: block;
   text-align: center;
   font-size: .8rem;
   line-height: 1.6;
   overflow: hidden;
+  padding-top: 55px;
 }
 
 .footer-right a:hover {
