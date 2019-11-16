@@ -119,13 +119,11 @@ footer {
   padding-bottom: 0px;
   top: 0;
   display: block;
+  text-align: center;
   font-size: 1rem;
   font-weight: 800;
   line-height: 1.6;
-  padding-right: 445px;
   overflow: hidden;
-  background-color: #ffffff;
-  padding: 15px 10px;
 }
 
 .footer-right a:hover {
