@@ -173,6 +173,7 @@ button {
   width: 80%;
   text-decoration: none;
   border-radius: 8px;
+  color: #585858;
 }
 
 .modal-content h3 {
@@ -181,7 +182,6 @@ button {
 }
 
 .modal-content h2 {
-  color: #000;
   font-weight: normal;
   font-size: 16px;
 }
