@@ -122,6 +122,8 @@ footer {
   line-height: 1.6;
   overflow: hidden;
   padding-top: 55px;
+  padding-bottom:55px;
+  color: #545454;
 }
 
 .footer-right a:hover {
