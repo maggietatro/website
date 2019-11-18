@@ -126,6 +126,14 @@ footer {
   color: #545454;
 }
 
+footer a {
+  color: #2B5988;
+}
+
+footer a:visited {
+  color: #545454;
+}
+
 .footer-right a:hover {
   background-color: #3c7dc0;
   color: #FFFFFF;
@@ -211,24 +219,24 @@ h2 img {
 }
 
 .modal-content a {
-  color: #3c7dc0;
+  color: #2B5988;
 }
 
 .modal-content a:visited {
-  color: #585858;
+  color: #545454;
 }
 
 /* The Close Button */
 .close {
   color: #585858;
   float: right;
-  font-size: 22px;
+  font-size: 30px;
   font-weight: normal;
 }
 
 .close:hover,
 .close:focus {
-  color: #3c7dc0;
+  color: #2B5988;
   text-decoration: none;
   cursor: pointer;
 }
